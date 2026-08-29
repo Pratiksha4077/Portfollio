@@ -1,0 +1,2339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pratiksha Patil | Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+    <!-- Canvas Particle Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- ========================= -->
+    <!-- Navigation -->
+    <!-- ========================= -->
+
+    <header>
+
+        <div class="logo">
+            <span>P</span>ratiksha.
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="header-actions">
+            <button id="theme-toggle" aria-label="Toggle Theme" class="theme-toggle-btn">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- Hero Section -->
+    <!-- ========================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h3>Welcome to my Portfolio</h3>
+
+            <h1>Hi, I'm <span>Pratiksha Patil</span></h1>
+
+            <h2>
+                <span id="typing"></span>
+            </h2>
+
+            <p>
+                Motivated Computer Science Engineering student passionate about
+                Full Stack Development, Artificial Intelligence,
+                Android Development, and innovative software solutions.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="resume.pdf" download="Pratiksha_Patil_Resume.pdf" class="btn" id="resume-download-btn">
+                    <i class="fas fa-download" style="margin-right: 8px;"></i>
+                    Download Resume
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="https://github.com/Pratiksha4077" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pratiksha-patil-b905832b1" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+                <a href="mailto:pratikshapatil4077@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div class="stat-badge-card">
+                <div class="stat-icon-circle">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>2</h3>
+                    <p>Internships Done</p>
+                </div>
+            </div>
+
+            <div class="stat-badge-card">
+                <div class="stat-icon-circle">
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>4+</h3>
+                    <p>Projects Done</p>
+                </div>
+            </div>
+
+            <div class="stat-badge-card">
+                <div class="stat-icon-circle">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>90.46%</h3>
+                    <p>Diploma Score</p>
+                </div>
+            </div>
+
+            <div class="stat-badge-card">
+                <div class="stat-icon-circle">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="stat-info">
+                    <h3>86%</h3>
+                    <p>B.Tech Current GPA</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- About -->
+    <!-- ========================= -->
+
+    <section id="about" class="section">
+
+        <div class="section-title">
+
+            <h2>About Me</h2>
+
+            <div class="underline"></div>
+
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-main">
+
+                <div class="about-tabs" role="tablist" aria-label="About sections">
+                    <button class="about-tab-btn active" role="tab" aria-selected="true" data-about-tab="bio">
+                        <i class="fas fa-user-circle"></i> Profile
+                    </button>
+                    <button class="about-tab-btn" role="tab" aria-selected="false" data-about-tab="journey">
+                        <i class="fas fa-route"></i> Journey
+                    </button>
+                </div>
+
+                <div class="about-tab-contents">
+
+                    <div class="about-tab-content active" id="about-bio" role="tabpanel">
+                        <h3>Full Stack Developer & AI Research Enthusiast</h3>
+                        <p>I'm <strong>Pratiksha Shivaji Patil</strong>, a Computer Science Engineering student with
+                            practical experience in Full Stack Web Development, Artificial Intelligence, and Android
+                            Application Development.</p>
+                        <p>My interests include creating intelligent web platforms, AI-driven applications, civic
+                            technology solutions, and modern user interfaces that solve real-world problems.</p>
+
+                        <div class="about-focus-grid">
+                            <button type="button" class="about-focus-card active" data-focus="fullstack">
+                                <i class="fas fa-code"></i>
+                                <span>Full Stack</span>
+                                <p>Building end-to-end web apps with clean UI and solid backends.</p>
+                            </button>
+                            <button type="button" class="about-focus-card" data-focus="ai">
+                                <i class="fas fa-brain"></i>
+                                <span>AI & ML</span>
+                                <p>Exploring intelligent systems, models, and AI-powered products.</p>
+                            </button>
+                            <button type="button" class="about-focus-card" data-focus="android">
+                                <i class="fab fa-android"></i>
+                                <span>Android</span>
+                                <p>Crafting mobile experiences with modern Android practices.</p>
+                            </button>
+                            <button type="button" class="about-focus-card" data-focus="civic">
+                                <i class="fas fa-city"></i>
+                                <span>Civic Tech</span>
+                                <p>Using technology to make public services more transparent.</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="about-tab-content" id="about-journey" role="tabpanel">
+                        <h3>Education & Experience Milestones</h3>
+                        <div class="about-journey-timeline">
+                            <div class="journey-item active" tabindex="0">
+                                <div class="journey-dot"></div>
+                                <div class="journey-card">
+                                    <span class="journey-year">2025</span>
+                                    <h4>AI Research Intern — AI Pathshalaa</h4>
+                                    <p>Built AI-powered web apps and researched emerging ML technologies.</p>
+                                </div>
+                            </div>
+                            <div class="journey-item" tabindex="0">
+                                <div class="journey-dot"></div>
+                                <div class="journey-card">
+                                    <span class="journey-year">2024 – 2027</span>
+                                    <h4>B.Tech CSE — D.Y. Patil COET</h4>
+                                    <p>Pursuing Computer Science & Engineering with 86.92% GPA.</p>
+                                </div>
+                            </div>
+                            <div class="journey-item" tabindex="0">
+                                <div class="journey-dot"></div>
+                                <div class="journey-card">
+                                    <span class="journey-year">2023</span>
+                                    <h4>Web Dev Intern — WOLFOX Services</h4>
+                                    <p>Developed responsive pages and learned professional engineering practices.</p>
+                                </div>
+                            </div>
+                            <div class="journey-item" tabindex="0">
+                                <div class="journey-dot"></div>
+                                <div class="journey-card">
+                                    <span class="journey-year">DIPLOMA</span>
+                                    <h4>Computer Engineering — ICRE Gargoti</h4>
+                                    <p>Completed diploma with 90.46% score.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Experience -->
+    <!-- ========================= -->
+
+    <section id="experience" class="section">
+
+        <div class="section-title">
+
+            <h2>Experience</h2>
+
+            <div class="underline"></div>
+
+        </div>
+
+        <div class="exp-interactive">
+
+            <div class="exp-selector" role="tablist" aria-label="Work experience">
+                <button type="button" class="exp-select-btn active" role="tab" aria-selected="true" data-exp="0">
+                    <span class="exp-select-icon"><i class="fas fa-brain"></i></span>
+                    <span class="exp-select-text">
+                        <strong>AI Pathshalaa</strong>
+                        <small>Jun 2025 – Sep 2025</small>
+                    </span>
+                </button>
+                <button type="button" class="exp-select-btn" role="tab" aria-selected="false" data-exp="1">
+                    <span class="exp-select-icon"><i class="fas fa-laptop-code"></i></span>
+                    <span class="exp-select-text">
+                        <strong>WOLFOX Services</strong>
+                        <small>Jun 2023 – Jul 2023</small>
+                    </span>
+                </button>
+            </div>
+
+            <div class="exp-panels">
+
+                <article class="exp-panel active" id="exp-panel-0" role="tabpanel">
+                    <div class="exp-panel-header">
+                        <div class="exp-panel-badge">Internship</div>
+                        <h3>Mobile AI Research & Web Development Intern</h3>
+                        <div class="exp-panel-meta">
+                            <span><i class="fas fa-building"></i> AI Pathshalaa</span>
+                            <span><i class="far fa-calendar-alt"></i> Jun 2025 – Sep 2025</span>
+                        </div>
+                    </div>
+                    <ul class="exp-panel-list">
+                        <li>Researched emerging Artificial Intelligence technologies to optimize application
+                            architectures.</li>
+                        <li>Developed responsive, AI-powered web applications using modern web practices.</li>
+                        <li>Worked on real-world AI solutions, implementing neural-network models and API integrations.
+                        </li>
+                        <li>Collaborated with senior mentors to complete research tasks and prepare technical
+                            documentation.</li>
+                    </ul>
+                    <div class="exp-panel-skills">
+                        <h4>Skills Gained</h4>
+                        <div class="skills-tags-row">
+                            <span>React.js</span>
+                            <span>Artificial Intelligence</span>
+                            <span>Machine Learning</span>
+                            <span>REST APIs</span>
+                            <span>Research</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="exp-panel" id="exp-panel-1" role="tabpanel">
+                    <div class="exp-panel-header">
+                        <div class="exp-panel-badge">Internship</div>
+                        <h3>Web Development Intern</h3>
+                        <div class="exp-panel-meta">
+                            <span><i class="fas fa-building"></i> WOLFOX Services Pvt. Ltd.</span>
+                            <span><i class="far fa-calendar-alt"></i> Jun 2023 – Jul 2023</span>
+                        </div>
+                    </div>
+                    <ul class="exp-panel-list">
+                        <li>Developed responsive and dynamic web pages, optimizing cross-browser compatibility and
+                            speed.</li>
+                        <li>Acquired professional software development practices, including version control and
+                            continuous integration.</li>
+                        <li>Collaborated closely with design and frontend development teams to refine user interfaces.
+                        </li>
+                        <li>Improved debugging, manual/automated testing, and code optimization skills on client
+                            projects.</li>
+                    </ul>
+                    <div class="exp-panel-skills">
+                        <h4>Skills Gained</h4>
+                        <div class="skills-tags-row">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Responsive Design</span>
+                            <span>Debugging</span>
+                            <span>Testing</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Education -->
+    <!-- ========================= -->
+
+    <section id="education" class="section">
+
+        <div class="section-title">
+
+            <h2>Education</h2>
+
+            <div class="underline"></div>
+
+        </div>
+
+        <div class="education-grid">
+
+            <div class="education-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>B.Tech Computer Science & Engineering</h3>
+                <h4>D.Y. Patil College of Engineering & Technology</h4>
+                <p>2024 – 2027</p>
+                <span>Current GPA: 86.92%</span>
+            </div>
+
+            <div class="education-card">
+                <i class="fas fa-school"></i>
+                <h3>Diploma in Computer Engineering</h3>
+                <h4>Institute of Civil and Rural Engineering, Gargoti</h4>
+                <p>Completed 2024</p>
+                <span>Score: 90.46%</span>
+            </div>
+
+            <div class="education-card">
+                <i class="fas fa-book-open"></i>
+                <h3>Secondary School Certificate (SSC)</h3>
+                <h4>Kisanrao More Highschool & JR College</h4>
+                <p>2021</p>
+                <span>Score: 92.20%</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Projects -->
+    <!-- ========================= -->
+
+    <section id="projects" class="section">
+
+        <div class="section-title">
+
+            <h2>Projects</h2>
+
+            <div class="underline"></div>
+
+        </div>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="ai">AI / ML</button>
+            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+        </div>
+
+        <div class="projects-slider" id="projects-slider-root">
+            <button type="button" class="proj-arrow prev" id="proj-prev-btn" aria-label="Previous project">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="projects-viewport" id="projects-viewport">
+                <div class="projects-progress-bar" aria-hidden="true">
+                    <span class="projects-progress-fill" id="proj-progress-fill"></span>
+                </div>
+                <div class="projects-track" id="projects-track">
+
+                    <!-- Project 1 -->
+
+                    <div class="project-card show" data-category="web ai">
+
+                        <div class="project-icon">
+                            <i class="fas fa-city"></i>
+                        </div>
+
+                        <h3>UrbanEye</h3>
+
+                        <span>Smart Civic Management Platform</span>
+
+                        <p>
+
+                            AI-powered MERN Stack platform that enables citizens
+                            to report municipal issues with location,
+                            image verification, role-based access,
+                            automated task assignment,
+                            and real-time issue tracking.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>MERN</span>
+                            <span>MongoDB</span>
+                            <span>Google Maps API</span>
+                            <span>AI/ML</span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="https://urbaneye-ai.vercel.app/" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Live Demo
+                            </a>
+
+                            <a class="project-details-trigger" data-project="urbaneye">
+                                <i class="fas fa-info-circle"></i>
+                                Details
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Project 2 -->
+
+                    <div class="project-card show" data-category="web">
+
+                        <div class="project-icon">
+
+                            <i class="fas fa-robot"></i>
+
+                        </div>
+
+                        <h3>AI-Pathshalaa</h3>
+
+                        <span>AI Learning Platform</span>
+
+                        <p>
+
+                            Developed an educational platform providing
+                            AI tutorials,
+                            AI tools,
+                            latest news,
+                            FAQs,
+                            and learning resources using
+                            React.js and Vite.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>React.js</span>
+                            <span>Vite</span>
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a href="https://ai-pathshalaa.vercel.app/" target="_blank">
+                                <i class="fas fa-globe"></i>
+                                Live Demo
+                            </a>
+
+                            <a class="project-details-trigger" data-project="ai-pathshalaa">
+                                <i class="fas fa-info-circle"></i>
+                                Details
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Project 3 -->
+
+                    <div class="project-card show" data-category="ai">
+
+                        <div class="project-icon">
+
+                            <i class="fas fa-chart-line"></i>
+
+                        </div>
+
+                        <h3>Feedback Analyzer</h3>
+
+                        <span>AI Sentiment Analysis</span>
+
+                        <p>
+
+                            AI-powered NLP application that
+                            classifies user feedback into
+                            Positive,
+                            Negative,
+                            and Neutral sentiments while
+                            extracting meaningful insights
+                            through Machine Learning.
+
+                        </p>
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>NLP</span>
+                            <span>Machine Learning</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <div class="project-links">
+
+                            <a class="project-details-trigger" data-project="feedback-analyzer">
+                                <i class="fas fa-info-circle"></i>
+                                Details
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Project 4 -->
+
+                    <div class="project-card show" data-category="ai">
+
+                        <div class="project-icon">
+                            <i class="fas fa-file-code"></i>
+                        </div>
+
+                        <h3>Code Comment Generator</h3>
+
+                        <span>AI-Powered Code Documentation</span>
+
+                        <p>
+                            Automatically analyzes source code and generates meaningful,
+                            line-by-line comments using Google Gemini AI. Supports multiple
+                            programming languages with automatic language detection.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Gemini AI</span>
+                            <span>NLP</span>
+                            <span>Tkinter</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a class="project-details-trigger" data-project="code-comment-generator">
+                                <i class="fas fa-info-circle"></i>
+                                Details
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Project 5 -->
+
+                    <div class="project-card show" data-category="mobile">
+
+                        <div class="project-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+
+                        <h3>Rolex Salon App</h3>
+
+                        <span>Android Salon Booking Application</span>
+
+                        <p>
+                            A modern Android application that allows users to explore salon services,
+                            book appointments, browse beauty products, and receive notifications.
+                            The app provides separate services for men and women with an easy-to-use interface.
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Android Studio</span>
+                            <span>Firebase</span>
+                            <span>XML</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a class="project-details-trigger" data-project="rolex-salon-app">
+                                <i class="fas fa-info-circle"></i>
+                                Details
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <button type="button" class="proj-arrow next" id="proj-next-btn" aria-label="Next project">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="projects-dots" id="projects-dots"></div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Skills -->
+    <!-- ========================= -->
+
+    <section id="skills" class="section">
+
+        <div class="section-title">
+
+            <h2>Technical Skills</h2>
+
+            <div class="underline"></div>
+
+        </div>
+
+        <!-- Skills Filter & Search -->
+        <div class="skills-controls-container">
+            <div class="skills-search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="skill-search" placeholder="Search technical skills...">
+            </div>
+
+            <div class="skills-filter">
+                <button class="skills-filter-btn active" data-skill-filter="all">All Skills</button>
+                <button class="skills-filter-btn" data-skill-filter="languages">Programming</button>
+                <button class="skills-filter-btn" data-skill-filter="web">Web Tech</button>
+                <button class="skills-filter-btn" data-skill-filter="ai-core">AI & Core</button>
+            </div>
+        </div>
+
+        <div class="skills-category-grid">
+
+            <!-- Languages -->
+            <div class="skills-category-card show" data-category="languages" data-category-name="Languages">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper lang-color">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Languages</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="Python" tabindex="0">Python<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Java" tabindex="0">Java<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="C" tabindex="0">C<span class="tooltip">Advanced</span>
+                    </div>
+                    <div class="skill-chip" data-skill-name="C++" tabindex="0">C++<span class="tooltip">Advanced</span>
+                    </div>
+                    <div class="skill-chip" data-skill-name="JavaScript" tabindex="0">JavaScript<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="PHP" tabindex="0">PHP<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="SQL" tabindex="0">SQL<span
+                            class="tooltip">Intermediate</span></div>
+                </div>
+            </div>
+
+            <!-- Frontend -->
+            <div class="skills-category-card show" data-category="web" data-category-name="Frontend">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper frontend-color">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="HTML5" tabindex="0">HTML5<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="CSS3" tabindex="0">CSS3<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="JavaScript" tabindex="0">JavaScript<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="React.js" tabindex="0">React.js<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Bootstrap" tabindex="0">Bootstrap<span
+                            class="tooltip">Advanced</span></div>
+                </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="skills-category-card show" data-category="web" data-category-name="Backend">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper backend-color">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Backend</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="Node.js" tabindex="0">Node.js<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="Express.js" tabindex="0">Express.js<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="PHP" tabindex="0">PHP<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="REST APIs" tabindex="0">REST APIs<span
+                            class="tooltip">Advanced</span></div>
+                </div>
+            </div>
+
+            <!-- Mobile Dev -->
+            <div class="skills-category-card show" data-category="languages" data-category-name="Mobile Dev">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper mobile-color">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Dev</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="Java" tabindex="0">Java<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="XML" tabindex="0">XML<span class="tooltip">Advanced</span>
+                    </div>
+                    <div class="skill-chip" data-skill-name="Android Studio" tabindex="0">Android Studio<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Firebase" tabindex="0">Firebase<span
+                            class="tooltip">Intermediate</span></div>
+                </div>
+            </div>
+
+            <!-- Databases -->
+            <div class="skills-category-card show" data-category="web" data-category-name="Databases">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper db-color">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Databases</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="MongoDB" tabindex="0">MongoDB<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="MySQL" tabindex="0">MySQL<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="Firebase Realtime DB" tabindex="0">Firebase Realtime
+                        DB<span class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="SQLite" tabindex="0">SQLite<span
+                            class="tooltip">Intermediate</span></div>
+                </div>
+            </div>
+
+            <!-- AI & Machine Learning -->
+            <div class="skills-category-card show" data-category="ai-core" data-category-name="AI & Machine Learning">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper ai-color">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & Machine Learning</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="NumPy" tabindex="0">NumPy<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Pandas" tabindex="0">Pandas<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Matplotlib" tabindex="0">Matplotlib<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="Scikit-learn" tabindex="0">Scikit-learn<span
+                            class="tooltip">Intermediate</span></div>
+                    <div class="skill-chip" data-skill-name="OpenCV" tabindex="0">OpenCV<span
+                            class="tooltip">Intermediate</span></div>
+                </div>
+            </div>
+
+            <!-- Tools & Platforms -->
+            <div class="skills-category-card show" data-category="web" data-category-name="Tools & Platforms">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper tools-color">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Tools & Platforms</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="Git" tabindex="0">Git<span class="tooltip">Advanced</span>
+                    </div>
+                    <div class="skill-chip" data-skill-name="GitHub" tabindex="0">GitHub<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="VS Code" tabindex="0">VS Code<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Android Studio" tabindex="0">Android Studio<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="AWS (Basics)" tabindex="0">AWS (Basics)<span
+                            class="tooltip">Intermediate</span></div>
+                </div>
+            </div>
+
+            <!-- Soft Skills -->
+            <div class="skills-category-card show" data-category="ai-core" data-category-name="Soft Skills">
+                <div class="category-card-header">
+                    <div class="category-icon-wrapper soft-color">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                </div>
+                <div class="category-chips">
+                    <div class="skill-chip" data-skill-name="Problem Solving" tabindex="0">Problem Solving<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Communication" tabindex="0">Communication<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Teamwork" tabindex="0">Teamwork<span
+                            class="tooltip">Advanced</span></div>
+                    <div class="skill-chip" data-skill-name="Adaptability" tabindex="0">Adaptability<span
+                            class="tooltip">Advanced</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Achievements -->
+    <!-- ========================= -->
+
+    <section id="achievements" class="section">
+
+        <div class="section-title">
+
+            <h2>Achievements</h2>
+
+            <div class="underline"></div>
+
+        </div>
+
+        <div class="achievement-grid">
+
+            <div class="achievement-card">
+
+                <i class="fas fa-award"></i>
+
+                <h3>
+
+                    MLSA Club Member
+
+                </h3>
+
+                <p>
+
+                    Active member of Microsoft Learn Student Ambassadors community,
+                    participating in technical workshops and promoting
+                    collaborative learning environments.
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fas fa-certificate"></i>
+
+                <h3>
+
+                    AI Pathshalaa Internship
+
+                </h3>
+
+                <p>
+
+                    Successfully completed
+                    AI Research &
+                    Web Development Internship
+                    focused on AI technologies
+                    and full-stack web development.
+
+                </p>
+
+            </div>
+
+            <div class="achievement-card">
+
+                <i class="fas fa-medal"></i>
+
+                <h3>
+
+                    Deloitte Certifications
+
+                </h3>
+
+                <p>
+
+                    Earned professional certifications through
+                    Deloitte's training programs, focusing on
+                    industry standards and technical excellence.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- Contact Me -->
+    <!-- ========================= -->
+    <section id="contact" class="section">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <div class="underline"></div>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:pratikshapatil4077@gmail.com"
+                                style="color: inherit; text-decoration: none;">pratikshapatil4077@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <a href="https://github.com/Pratiksha4077" target="_blank" class="contact-item contact-link-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>github.com/Pratiksha4077</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/pratiksha-patil-b905832b1" target="_blank"
+                    class="contact-item contact-link-item">
+                    <i class="fab fa-linkedin-in"></i>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/pratiksha-patil</p>
+                    </div>
+                </a>
+
+                <a href="https://maps.google.com/?q=Malave,+Maharashtra,+India" target="_blank"
+                    class="contact-item contact-link-item" title="Open in Google Maps">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Malave, Maharashtra, India</p>
+                    </div>
+                </a>
+            </div>
+
+            <form id="contactForm" class="contact-form" action="https://formsubmit.co/2b67323a84c1e31b5f6cc0b0a9df0f6d" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" value="New Message from Portfolio Website">
+                <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+                <input type="text" id="contact-location" name="location" placeholder="Your Location / Subject" required>
+                <textarea id="contact-message" name="message" rows="6" placeholder="Your Message" maxlength="500"
+                    required></textarea>
+                <div class="char-counter"><span id="char-count">0</span> / 500 characters</div>
+                <button type="submit" id="contact-submit" class="btn">
+                    <span>Send Message</span> <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- Footer -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <h3>
+
+            Pratiksha Shivaji Patil
+
+        </h3>
+
+        <p>
+
+            Full Stack Developer • AI Research • Android Developer
+
+        </p>
+
+        <div class="footer-social">
+
+            <a href="https://github.com/Pratiksha4077" target="_blank">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/pratiksha-patil-b905832b1" target="_blank">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+            <a href="mailto:pratikshapatil4077@gmail.com">
+
+                <i class="fas fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Pratiksha Shivaji Patil.
+            All Rights Reserved.
+
+        </p>
+
+    </footer>
+
+    <!-- Back To Top -->
+    <button id="topBtn" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body-content" class="modal-body">
+                <!-- Content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Message Success Modal -->
+    <div id="contact-success-modal" class="modal">
+        <div class="modal-content contact-success-card">
+            <span class="close-modal" id="close-success-modal">&times;</span>
+            <div class="success-icon-wrapper">
+                <i class="fas fa-check"></i>
+            </div>
+            <h2 id="success-modal-title" style="color: #ffffff; font-size: 1.6rem; margin-bottom: 8px;">Message Sent! 🎉</h2>
+            <p style="color: #a0aab8; font-size: 0.95rem; line-height: 1.6; margin-bottom: 16px;">
+                Thank you, <strong id="success-user-name" style="color: var(--gold);">Visitor</strong>! Your message has been sent directly to <strong style="color: #ffffff;">pratikshapatil4077@gmail.com</strong>.
+            </p>
+            <div class="success-modal-details">
+                <div style="margin-bottom: 6px;"><strong style="color: #ffffff;">Subject:</strong> <span id="success-user-subject">Portfolio Inquiry</span></div>
+                <div style="margin-bottom: 6px;"><strong style="color: #ffffff;">Sender:</strong> <span id="success-user-email">email@example.com</span></div>
+                <div><strong style="color: #ffffff;">Message:</strong> <span id="success-user-message" style="font-style: italic;">...</span></div>
+            </div>
+            <button id="success-modal-btn" class="btn" style="margin-top: 22px; width: 100%;">
+                <span>Done / Send Another</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="resume-data.js"></script>
+    <script>
+        /* ===========================================
+           MOBILE NAVIGATION
+        =========================================== */
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const nav = document.querySelector("nav");
+
+        menuBtn.addEventListener("click", () => {
+            nav.classList.toggle("active");
+            if (nav.classList.contains("active")) {
+                menuBtn.innerHTML = '<i class="fas fa-times"></i>';
+            } else {
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        });
+
+        document.querySelectorAll("nav a").forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("active");
+                menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        /* ===========================================
+           INTERACTIVE EXPERIENCE SELECTOR
+        =========================================== */
+        const expSelectBtns = document.querySelectorAll(".exp-select-btn");
+        const expPanels = document.querySelectorAll(".exp-panel");
+
+        function showExpPanel(index) {
+            expSelectBtns.forEach((btn, i) => {
+                const isActive = i === index;
+                btn.classList.toggle("active", isActive);
+                btn.setAttribute("aria-selected", isActive ? "true" : "false");
+            });
+            expPanels.forEach((panel, i) => {
+                panel.classList.toggle("active", i === index);
+            });
+        }
+
+        expSelectBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                showExpPanel(parseInt(btn.getAttribute("data-exp"), 10));
+            });
+        });
+
+        /* ===========================================
+           LIGHT/DARK THEME TOGGLER
+        =========================================== */
+        const themeToggleBtn = document.getElementById("theme-toggle");
+
+        // Initialize theme
+        const activeTheme = localStorage.getItem("portfolio-theme") || "dark";
+        if (activeTheme === "light") {
+            document.documentElement.setAttribute("data-theme", "light");
+            themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+            document.documentElement.removeAttribute("data-theme");
+            themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+
+        themeToggleBtn.addEventListener("click", () => {
+            const isLight = document.documentElement.getAttribute("data-theme") === "light";
+            if (isLight) {
+                document.documentElement.removeAttribute("data-theme");
+                localStorage.setItem("portfolio-theme", "dark");
+                themeToggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+                showToast("Switched to Dark Mode", "fas fa-moon");
+            } else {
+                document.documentElement.setAttribute("data-theme", "light");
+                localStorage.setItem("portfolio-theme", "light");
+                themeToggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+                showToast("Switched to Light Mode", "fas fa-sun");
+            }
+        });
+
+        /* ===========================================
+           INTERACTIVE ABOUT ME TABS + FOCUS / JOURNEY
+        =========================================== */
+        const aboutTabBtns = document.querySelectorAll(".about-tab-btn");
+        const aboutTabContents = document.querySelectorAll(".about-tab-content");
+
+        aboutTabBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                aboutTabBtns.forEach(b => {
+                    b.classList.remove("active");
+                    b.setAttribute("aria-selected", "false");
+                });
+                aboutTabContents.forEach(c => c.classList.remove("active"));
+
+                btn.classList.add("active");
+                btn.setAttribute("aria-selected", "true");
+                const targetTab = btn.getAttribute("data-about-tab");
+                const activeContent = document.getElementById(`about-${targetTab}`);
+                if (activeContent) {
+                    activeContent.classList.add("active");
+                }
+            });
+        });
+
+        const aboutFocusCards = document.querySelectorAll(".about-focus-card");
+        aboutFocusCards.forEach(card => {
+            card.addEventListener("click", () => {
+                aboutFocusCards.forEach(c => c.classList.remove("active"));
+                card.classList.add("active");
+            });
+        });
+
+        const journeyItems = document.querySelectorAll(".journey-item");
+        journeyItems.forEach(item => {
+            const activate = () => {
+                journeyItems.forEach(i => i.classList.remove("active"));
+                item.classList.add("active");
+            };
+            item.addEventListener("click", activate);
+            item.addEventListener("focus", activate);
+        });
+
+        /* ===========================================
+           SCROLL PROGRESS INDICATOR & HEADER SCROLL
+        =========================================== */
+
+        const header = document.querySelector("header");
+        const scrollProgress = document.getElementById("scroll-progress");
+
+        window.addEventListener("scroll", () => {
+            // Scroll Progress
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            if (totalHeight > 0) {
+                const progress = (window.scrollY / totalHeight) * 100;
+                scrollProgress.style.width = `${progress}%`;
+            }
+
+            // Header Background Scrolled toggle
+            if (window.scrollY > 60) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
+
+        /* ===========================================
+           PROJECTS FILTER + AUTOPLAY SLIDER
+        =========================================== */
+
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const projectCards = document.querySelectorAll(".project-card");
+        const projectsTrack = document.getElementById("projects-track");
+        const projectsViewport = document.getElementById("projects-viewport");
+        const projectsSliderRoot = document.getElementById("projects-slider-root");
+        const projectsDots = document.getElementById("projects-dots");
+        const projPrevBtn = document.getElementById("proj-prev-btn");
+        const projNextBtn = document.getElementById("proj-next-btn");
+        const projProgressFill = document.getElementById("proj-progress-fill");
+
+        let currentProjectSlide = 0;
+        let projectAutoplayTimer = null;
+        let projectProgressTimer = null;
+        let projectHoverPaused = false;
+        const PROJECT_AUTOPLAY_MS = 4500;
+
+        function getVisibleProjects() {
+            return Array.from(projectCards).filter(card => card.classList.contains("show"));
+        }
+
+        function setProgress(pct) {
+            if (!projProgressFill) return;
+            projProgressFill.style.width = Math.max(0, Math.min(100, pct)) + "%";
+        }
+
+        function stopProjectProgress() {
+            if (projectProgressTimer) {
+                cancelAnimationFrame(projectProgressTimer);
+                projectProgressTimer = null;
+            }
+        }
+
+        function startProjectProgress() {
+            stopProjectProgress();
+            if (projectHoverPaused) {
+                setProgress(0);
+                return;
+            }
+
+            const visible = getVisibleProjects();
+            if (visible.length <= 1) {
+                setProgress(0);
+                return;
+            }
+
+            const startTime = performance.now();
+
+            function tick(now) {
+                if (projectHoverPaused) return;
+                const elapsed = now - startTime;
+                const pct = (elapsed / PROJECT_AUTOPLAY_MS) * 100;
+                setProgress(pct);
+                if (elapsed < PROJECT_AUTOPLAY_MS) {
+                    projectProgressTimer = requestAnimationFrame(tick);
+                }
+            }
+
+            setProgress(0);
+            projectProgressTimer = requestAnimationFrame(tick);
+        }
+
+        function stopProjectAutoplay() {
+            if (projectAutoplayTimer) {
+                clearInterval(projectAutoplayTimer);
+                projectAutoplayTimer = null;
+            }
+            stopProjectProgress();
+            setProgress(0);
+        }
+
+        function startProjectAutoplay() {
+            stopProjectAutoplay();
+
+            const visible = getVisibleProjects();
+            if (visible.length <= 1) return;
+
+            startProjectProgress();
+            projectAutoplayTimer = setInterval(() => {
+                if (projectHoverPaused) return;
+                const items = getVisibleProjects();
+                if (items.length <= 1) return;
+                currentProjectSlide = (currentProjectSlide + 1) % items.length;
+                updateProjectSlider(false);
+                startProjectProgress();
+            }, PROJECT_AUTOPLAY_MS);
+        }
+
+        function restartProjectAutoplay() {
+            startProjectAutoplay();
+        }
+
+        function buildProjectDots() {
+            if (!projectsDots) return;
+            const visible = getVisibleProjects();
+            projectsDots.innerHTML = "";
+            visible.forEach((_, idx) => {
+                const dot = document.createElement("button");
+                dot.type = "button";
+                dot.className = "proj-dot" + (idx === currentProjectSlide ? " active" : "");
+                dot.setAttribute("aria-label", "Go to project " + (idx + 1));
+                dot.addEventListener("click", () => {
+                    goToProjectSlide(idx);
+                    restartProjectAutoplay();
+                });
+                projectsDots.appendChild(dot);
+            });
+        }
+
+        function updateProjectSlider(resetAutoplay = true) {
+            const visible = getVisibleProjects();
+            if (visible.length === 0) {
+                if (projectsTrack) projectsTrack.style.transform = "translateX(0)";
+                buildProjectDots();
+                stopProjectAutoplay();
+                return;
+            }
+
+            if (currentProjectSlide >= visible.length) currentProjectSlide = 0;
+            if (currentProjectSlide < 0) currentProjectSlide = visible.length - 1;
+
+            if (projectsTrack) {
+                projectsTrack.style.transform = "translateX(-" + (currentProjectSlide * 100) + "%)";
+            }
+
+            projectCards.forEach(card => card.classList.remove("slide-active"));
+            if (visible[currentProjectSlide]) {
+                visible[currentProjectSlide].classList.add("slide-active");
+            }
+
+            buildProjectDots();
+
+            if (resetAutoplay) restartProjectAutoplay();
+        }
+
+        function goToProjectSlide(index) {
+            const visible = getVisibleProjects();
+            if (visible.length === 0) return;
+            currentProjectSlide = ((index % visible.length) + visible.length) % visible.length;
+            updateProjectSlider(true);
+        }
+
+        function stepProjectSlide(step) {
+            goToProjectSlide(currentProjectSlide + step);
+        }
+
+        if (projPrevBtn && projNextBtn) {
+            projPrevBtn.addEventListener("click", () => stepProjectSlide(-1));
+            projNextBtn.addEventListener("click", () => stepProjectSlide(1));
+        }
+
+        if (projectsSliderRoot) {
+            projectsSliderRoot.addEventListener("mouseenter", () => {
+                projectHoverPaused = true;
+                stopProjectProgress();
+                setProgress(0);
+            });
+            projectsSliderRoot.addEventListener("mouseleave", () => {
+                projectHoverPaused = false;
+                startProjectAutoplay();
+            });
+            projectsSliderRoot.addEventListener("focusin", () => {
+                projectHoverPaused = true;
+                stopProjectProgress();
+                setProgress(0);
+            });
+            projectsSliderRoot.addEventListener("focusout", (e) => {
+                if (!projectsSliderRoot.contains(e.relatedTarget)) {
+                    projectHoverPaused = false;
+                    startProjectAutoplay();
+                }
+            });
+        }
+
+        if (projectsViewport) {
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            projectsViewport.addEventListener("touchstart", (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                projectHoverPaused = true;
+                stopProjectProgress();
+            }, { passive: true });
+
+            projectsViewport.addEventListener("touchend", (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                const diff = touchStartX - touchEndX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) stepProjectSlide(1);
+                    else stepProjectSlide(-1);
+                }
+                projectHoverPaused = false;
+                startProjectAutoplay();
+            }, { passive: true });
+        }
+
+        document.addEventListener("keydown", (e) => {
+            const section = document.getElementById("projects");
+            if (!section) return;
+            const rect = section.getBoundingClientRect();
+            const inView = rect.top < window.innerHeight * 0.75 && rect.bottom > window.innerHeight * 0.25;
+            if (!inView) return;
+            if (e.key === "ArrowLeft") {
+                e.preventDefault();
+                stepProjectSlide(-1);
+            }
+            if (e.key === "ArrowRight") {
+                e.preventDefault();
+                stepProjectSlide(1);
+            }
+        });
+
+        document.addEventListener("visibilitychange", () => {
+            if (document.hidden) stopProjectAutoplay();
+            else startProjectAutoplay();
+        });
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                filterBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                const filterValue = btn.getAttribute("data-filter");
+
+                projectCards.forEach(card => {
+                    const categories = card.getAttribute("data-category").split(" ");
+                    if (filterValue === "all" || categories.includes(filterValue)) {
+                        card.classList.remove("hide");
+                        card.classList.add("show");
+                    } else {
+                        card.classList.remove("show");
+                        card.classList.add("hide");
+                    }
+                });
+
+                currentProjectSlide = 0;
+                updateProjectSlider(true);
+            });
+        });
+
+        updateProjectSlider(true);
+
+        /* ===========================================
+           INTERACTIVE SKILLS FILTER & SEARCH
+        =========================================== */
+        const skillFilterBtns = document.querySelectorAll(".skills-filter-btn");
+        const skillCategoryCards = document.querySelectorAll(".skills-category-card");
+        const skillSearchInput = document.getElementById("skill-search");
+
+        function filterSkills() {
+            const query = skillSearchInput.value.toLowerCase().trim();
+            const activeFilter = document.querySelector(".skills-filter-btn.active").getAttribute("data-skill-filter");
+
+            skillCategoryCards.forEach(card => {
+                const category = card.getAttribute("data-category");
+                const matchesFilter = activeFilter === "all" || category === activeFilter;
+                const chips = card.querySelectorAll(".skill-chip");
+                let matchingChipsCount = 0;
+
+                chips.forEach(chip => {
+                    const skillName = chip.getAttribute("data-skill-name").toLowerCase();
+                    const matchesSearch = query === "" || skillName.includes(query);
+
+                    if (matchesSearch) {
+                        if (query !== "") {
+                            chip.classList.add("highlighted");
+                        } else {
+                            chip.classList.remove("highlighted");
+                        }
+                        matchingChipsCount++;
+                    } else {
+                        chip.classList.remove("highlighted");
+                    }
+                });
+
+                if (matchesFilter && (query === "" || matchingChipsCount > 0)) {
+                    card.classList.remove("hide");
+                    card.classList.add("show");
+                } else {
+                    card.classList.remove("show");
+                    card.classList.add("hide");
+                }
+            });
+        }
+
+        skillFilterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                skillFilterBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                filterSkills();
+            });
+        });
+
+        skillSearchInput.addEventListener("input", filterSkills);
+
+        /* ===========================================
+           PROJECT DETAILS MODAL LOGIC
+        =========================================== */
+
+        const projectDetails = {
+            urbaneye: {
+                title: "UrbanEye",
+                subtitle: "Smart Civic Management Platform",
+                icon: "fas fa-city",
+                tech: ["MERN", "MongoDB", "Google Maps API", "AI/ML"],
+                description: "UrbanEye is a civic tech platform leveraging modern web frameworks and intelligence. It provides citizens with direct pathways to file municipal requests (such as damaged roads, broken street lamps, or illegal garbage piles) alongside geo-location tagging and image validation.",
+                features: [
+                    "AI image classification models for automated incident verification",
+                    "Dynamic route optimizations for sanitation and repair crews",
+                    "Integrated dashboards featuring interactive maps using Google Maps API",
+                    "Comprehensive admin panels featuring role-based configurations",
+                    "Automatic feedback triggers containing ticket tracking systems"
+                ],
+                liveLink: "https://urbaneye-ai.vercel.app/"
+            },
+            "ai-pathshalaa": {
+                title: "AI-Pathshalaa",
+                subtitle: "AI Learning Platform",
+                icon: "fas fa-robot",
+                tech: ["React.js", "Vite", "JavaScript", "HTML", "CSS"],
+                description: "AI-Pathshalaa offers learning materials tailored to guide students in Artificial Intelligence methodologies. It aggregates guides, productivity tools directories, active newsletters, and code repositories into a centralized interface.",
+                features: [
+                    "Interactive quiz elements testing foundational ML topics",
+                    "A fully responsive user interface following modern design rules",
+                    "Centralized tools catalog supporting queries and tags filtering",
+                    "Detailed learning maps for Deep Learning and Natural Language Processing"
+                ],
+                liveLink: "https://ai-pathshalaa.vercel.app/"
+            },
+            "feedback-analyzer": {
+                title: "Feedback Analyzer",
+                subtitle: "AI Sentiment Analysis",
+                icon: "fas fa-chart-line",
+                tech: ["Python", "NLP", "Machine Learning", "JavaScript"],
+                description: "Feedback Analyzer parses customer comments, categorizing texts into sentiment ranges (positive, negative, neutral) to extract key points of review and insights dynamically.",
+                features: [
+                    "Support vector machine models trained on customer review corpora",
+                    "Interactive sentiment dashboard reporting classification stats",
+                    "Live testing portal for validating inputs in real-time",
+                    "Support for batch processing reviews in spreadsheet datasets (CSV)"
+                ],
+                liveLink: "#"
+            },
+            "code-comment-generator": {
+                title: "Code Comment Generator",
+                subtitle: "AI-Powered Code Documentation",
+                icon: "fas fa-file-code",
+                tech: ["Python", "Google Gemini AI", "Tkinter", "NLP"],
+                description: "Code Comment Generator is an intelligent desktop application that automatically detects programming languages and generates context-aware code comments using Google Gemini AI. It improves code readability, documentation quality, and developer productivity by providing meaningful explanations for source code.",
+                features: [
+                    "Automatic programming language detection for uploaded source code files",
+                    "AI-powered generation of meaningful line-by-line comments using Google Gemini AI",
+                    "Modern desktop GUI built with Python Tkinter for an intuitive experience",
+                    "Upload source code files or paste code directly into the editor",
+                    "Secure Gemini API key configuration inside the application",
+                    "Copy generated comments to clipboard or save them as a new file",
+                    "Supports Python, Java, C, C++, PHP, JavaScript, and more"
+                ],
+                liveLink: "#"
+            },
+            "rolex-salon-app": {
+                title: "Rolex Salon App",
+                subtitle: "Android Salon Booking Application",
+                icon: "fab fa-android",
+                tech: ["Java", "Android Studio", "XML", "Firebase Authentication", "Firebase Realtime Database"],
+                description: "Rolex Salon App is a feature-rich Android application developed using Java and Android Studio that simplifies salon appointment booking and service management. The application enables customers to browse men's and women's beauty services, schedule appointments, explore salon products, and receive notifications, while providing administrators with tools to manage customer appointments efficiently.",
+                features: [
+                    "User registration and secure login system.",
+                    "Browse separate salon services for men and women.",
+                    "Book salon appointments through an intuitive interface.",
+                    "View available beauty and grooming products.",
+                    "Real-time appointment management for administrators.",
+                    "Notification system for appointment updates.",
+                    "Attractive Android UI built using XML layouts.",
+                    "Firebase integration for authentication and data storage.",
+                    "Responsive navigation using Bottom Navigation and Fragments.",
+                    "Organized service categories including Haircut, Spa, Facial, Waxing, Massage, Pedicure, Manicure, Hair Styling, and Hair Coloring."
+                ],
+                liveLink: "#"
+            }
+        };
+
+        const modal = document.getElementById("project-modal");
+        const modalBody = document.getElementById("modal-body-content");
+        const closeModal = document.querySelector(".close-modal");
+
+        document.querySelectorAll(".project-details-trigger").forEach(trigger => {
+            trigger.addEventListener("click", (e) => {
+                e.preventDefault();
+                const projectKey = trigger.getAttribute("data-project");
+                const project = projectDetails[projectKey];
+
+                if (project) {
+                    let techHtml = project.tech.map(t => `<span>${t}</span>`).join("");
+                    let featuresHtml = project.features.map(f => `<li>${f}</li>`).join("");
+                    let btnText = "Visit Live Site";
+                    if (project.liveLink.includes("github.com")) {
+                        btnText = "View Source Code";
+                    }
+                    let linkHtml = project.liveLink !== "#"
+                        ? `<a href="${project.liveLink}" target="_blank" class="btn">${btnText}</a>`
+                        : `<span class="btn btn-outline" style="opacity: 0.6; cursor: not-allowed;">Demo Unavailable</span>`;
+
+                    modalBody.innerHTML = `
+                        <div class="modal-header">
+                            <i class="${project.icon}"></i>
+                            <div>
+                                <h2>${project.title}</h2>
+                                <span>${project.subtitle}</span>
+                            </div>
+                        </div>
+                        <p class="modal-desc">${project.description}</p>
+                        <h4 class="modal-features-title">Key Accomplishments & Features:</h4>
+                        <ul class="modal-features">${featuresHtml}</ul>
+                        <div class="modal-tech">${techHtml}</div>
+                        <div class="modal-actions">
+                            ${linkHtml}
+                        </div>
+                    `;
+
+                    modal.classList.add("show");
+                    document.body.style.overflow = "hidden"; // Prevent background scroll
+                }
+            });
+        });
+
+        function closeProjectModal() {
+            modal.classList.remove("show");
+            document.body.style.overflow = "auto";
+        }
+
+        closeModal.addEventListener("click", closeProjectModal);
+
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                closeProjectModal();
+            }
+        });
+
+        window.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && modal.classList.contains("show")) {
+                closeProjectModal();
+            }
+        });
+
+        /* ===========================================
+           TOAST NOTIFICATIONS UTILITY
+        =========================================== */
+
+        function showToast(message, icon = "fas fa-check-circle") {
+            const container = document.getElementById("toast-container");
+            const toast = document.createElement("div");
+            toast.className = "toast";
+            toast.innerHTML = `<i class="${icon}"></i> <span>${message}</span>`;
+            container.appendChild(toast);
+
+            // Force layout calculation
+            toast.offsetHeight;
+
+            toast.classList.add("show");
+
+            setTimeout(() => {
+                toast.classList.remove("show");
+                setTimeout(() => {
+                    toast.remove();
+                }, 400);
+            }, 3500);
+        }
+
+
+
+        /* ===========================================
+           TYPING ANIMATION
+        =========================================== */
+
+        const words = [
+            "Android Developer",
+            "Full Stack Developer",
+            "AI Researcher",
+            "MERN Stack Developer"
+
+        ];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let deleting = false;
+        const typing = document.getElementById("typing");
+
+        function typeEffect() {
+            const current = words[wordIndex];
+
+            if (!deleting) {
+                typing.textContent = current.substring(0, charIndex + 1);
+                charIndex++;
+
+                if (charIndex === current.length) {
+                    deleting = true;
+                    setTimeout(typeEffect, 1500);
+                    return;
+                }
+            } else {
+                typing.textContent = current.substring(0, charIndex - 1);
+                charIndex--;
+
+                if (charIndex === 0) {
+                    deleting = false;
+                    wordIndex++;
+                    if (wordIndex >= words.length)
+                        wordIndex = 0;
+                }
+            }
+
+            setTimeout(typeEffect, deleting ? 50 : 100);
+        }
+
+        typeEffect();
+
+        /* ===========================================
+           ACTIVE NAVIGATION LINK TRACKER
+        =========================================== */
+
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll("nav a");
+
+        function updateActiveNav() {
+            const scrollY = window.scrollY || window.pageYOffset;
+            let current = "home";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 180;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute("id");
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === "#" + current) {
+                    link.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", updateActiveNav);
+        window.addEventListener("resize", updateActiveNav);
+        updateActiveNav();
+
+        /* ===========================================
+           BACK TO TOP BUTTON
+        =========================================== */
+
+        const topBtn = document.getElementById("topBtn");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 450) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+        });
+
+        topBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+
+        /* ===========================================
+           SCROLL REVEAL ANIMATION (INTERSECTION OBSERVER)
+        =========================================== */
+
+        const revealItems = document.querySelectorAll(
+            ".section-title,\
+            .about-main,\
+            .education-card,\
+            .exp-interactive,\
+            .projects-slider,\
+            .projects-dots,\
+            .skill-card-circular,\
+            .achievement-card,\
+            footer"
+        );
+
+        revealItems.forEach(item => {
+            item.classList.add("fade-up");
+        });
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: .15
+        });
+
+        revealItems.forEach(item => {
+            observer.observe(item);
+        });
+
+        /* ===========================================
+           HERO STATS COUNT-UP ANIMATION
+        =========================================== */
+        const statCards = document.querySelectorAll(".stat-badge-card");
+        const statObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const h3 = entry.target.querySelector(".stat-info h3");
+                if (!h3 || h3.dataset.animated) return;
+                h3.dataset.animated = "1";
+                const raw = h3.textContent.trim();
+                const num = parseFloat(raw);
+                const suffix = raw.replace(/[\d.]/g, "");
+                if (isNaN(num)) return;
+                let start = 0;
+                const duration = 1400;
+                const step = 16;
+                const inc = num / (duration / step);
+                const timer = setInterval(() => {
+                    start = Math.min(start + inc, num);
+                    const display = Number.isInteger(num) ? Math.floor(start) : start.toFixed(2);
+                    h3.textContent = display + suffix;
+                    if (start >= num) clearInterval(timer);
+                }, step);
+                statObserver.unobserve(entry.target);
+            });
+        }, { threshold: 0.5 });
+        statCards.forEach(c => statObserver.observe(c));
+
+        /* ===========================================
+           HERO FLOATING ANIMATION (IF IMAGE EXISTS)
+        =========================================== */
+        const heroImage = document.querySelector(".image-circle");
+        if (heroImage) {
+            let position = 0;
+            let direction = 1;
+
+            function floating() {
+                position += direction * 0.3;
+                if (position >= 12) direction = -1;
+                if (position <= -12) direction = 1;
+                heroImage.style.transform = `translateY(${position}px)`;
+                requestAnimationFrame(floating);
+            }
+
+            floating();
+        }
+
+        /* ===========================================
+           THEME-AWARE CURSOR GLOW (DESKTOP ONLY)
+        =========================================== */
+
+        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+        if (!isTouchDevice) {
+            const glow = document.createElement("div");
+            glow.style.position = "fixed";
+            glow.style.width = "18px";
+            glow.style.height = "18px";
+            glow.style.borderRadius = "50%";
+            glow.style.background = "var(--gold)";
+            glow.style.opacity = "0.5";
+            glow.style.boxShadow = "0 0 10px var(--gold)";
+            glow.style.pointerEvents = "none";
+            glow.style.transform = "translate(-50%,-50%)";
+            glow.style.zIndex = "99999";
+            glow.style.transition = "transform .08s linear, background-color 0.3s, box-shadow 0.3s";
+
+            document.body.appendChild(glow);
+
+            document.addEventListener("mousemove", e => {
+                glow.style.left = e.clientX + "px";
+                glow.style.top = e.clientY + "px";
+            });
+        }
+
+        /* ===========================================
+           CURRENT YEAR IN FOOTER
+        =========================================== */
+
+        const copyright = document.querySelector(".copyright");
+        if (copyright) {
+            copyright.innerHTML = `© ${new Date().getFullYear()} Pratiksha Shivaji Patil. All Rights Reserved.`;
+        }
+
+        /* ===========================================
+           INTERACTIVE CANVAS PARTICLES
+        =========================================== */
+        const canvas = document.getElementById("bg-canvas");
+        if (canvas) {
+            const ctx = canvas.getContext("2d");
+            let particles = [];
+            let width = (canvas.width = window.innerWidth);
+            let height = (canvas.height = window.innerHeight);
+
+            window.addEventListener("resize", () => {
+                width = (canvas.width = window.innerWidth);
+                height = (canvas.height = window.innerHeight);
+            });
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * height;
+                    this.vx = (Math.random() - 0.5) * 0.4;
+                    this.vy = (Math.random() - 0.5) * 0.4;
+                    this.radius = Math.random() * 2 + 1;
+                }
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if (this.x < 0 || this.x > width) this.vx *= -1;
+                    if (this.y < 0 || this.y > height) this.vy *= -1;
+                }
+                draw() {
+                    const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--gold').trim();
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = accentColor + "25"; // transparent accent
+                    ctx.fill();
+                }
+            }
+
+            function init() {
+                particles = [];
+                const count = Math.min(60, Math.floor((width * height) / 25000));
+                for (let i = 0; i < count; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, width, height);
+                const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--gold').trim();
+                ctx.strokeStyle = accentColor + "09"; // super light line connection
+                ctx.lineWidth = 0.5;
+
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                    particles[i].draw();
+
+                    for (let j = i + 1; j < particles.length; j++) {
+                        const dx = particles[i].x - particles[j].x;
+                        const dy = particles[i].y - particles[j].y;
+                        const dist = Math.sqrt(dx * dx + dy * dy);
+                        if (dist < 130) {
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.stroke();
+                        }
+                    }
+                }
+                requestAnimationFrame(animate);
+            }
+
+            init();
+            animate();
+        }
+
+        /* ===========================================
+           CONTACT FORM INTERACTIVITY & CONFETTI
+        =========================================== */
+        // Contact Form Character Counter
+        const messageTextarea = document.getElementById("contact-message");
+        const charCountSpan = document.getElementById("char-count");
+        if (messageTextarea && charCountSpan) {
+            messageTextarea.addEventListener("input", () => {
+                charCountSpan.textContent = messageTextarea.value.length;
+            });
+        }
+
+        // Contact Form Submission Handler
+        const contactForm = document.getElementById("contactForm");
+        const submitBtn = document.getElementById("contact-submit");
+        const successModal = document.getElementById("contact-success-modal");
+        const closeSuccessModal = document.getElementById("close-success-modal");
+        const successModalBtn = document.getElementById("success-modal-btn");
+
+        if (contactForm && submitBtn) {
+            contactForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const nameInput = document.getElementById("contact-name");
+                const emailInput = document.getElementById("contact-email");
+                const locationInput = document.getElementById("contact-location");
+                const messageInput = document.getElementById("contact-message");
+
+                const name = nameInput.value.trim();
+                const email = emailInput.value.trim();
+                const loc = locationInput ? locationInput.value.trim() : "";
+                const message = messageInput.value.trim();
+
+                if (!name || !email || !message) {
+                    showToast("Please fill in all required fields!", "fas fa-exclamation-circle");
+                    return;
+                }
+
+                // Animate button
+                const origHtml = submitBtn.innerHTML;
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = `<span>Sending Message...</span> <i class="fas fa-spinner fa-spin" style="margin-left: 8px;"></i>`;
+
+                // Prepare FormSubmit payload
+                const formData = new FormData();
+                formData.append("name", name);
+                formData.append("email", email);
+                formData.append("location", loc || "Not specified");
+                formData.append("message", message);
+                formData.append("_subject", `Portfolio Message from ${name}`);
+                formData.append("_template", "table");
+                formData.append("_captcha", "false");
+
+                // Submit directly to FormSubmit AJAX endpoint
+                fetch("https://formsubmit.co/ajax/2b67323a84c1e31b5f6cc0b0a9df0f6d", {
+                    method: "POST",
+                    headers: {
+                        "Accept": "application/json"
+                    },
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = origHtml;
+
+                    if (data.success === "false" || data.success === false) {
+                        if (data.message && data.message.toLowerCase().includes("activation")) {
+                            showToast("Activation email sent! Please check your Gmail to confirm.", "fas fa-envelope-open-text");
+                            if (successModal) successModal.style.display = "flex";
+                            const modalTitle = document.getElementById("success-modal-title");
+                            if (modalTitle) modalTitle.textContent = "Activation Email Sent! 📩";
+                            return;
+                        } else if (data.message && data.message.toLowerCase().includes("web server")) {
+                            showToast("FormSubmit requires a web server. Open http://localhost:3000 to test!", "fas fa-exclamation-triangle");
+                            const openLocal = confirm("FormSubmit requires a web server (it blocks local file:/// paths).\n\nYour local server is currently running!\nWould you like to open http://localhost:3000 now?");
+                            if (openLocal) {
+                                window.location.href = "http://localhost:3000#contact";
+                            }
+                            return;
+                        }
+                    }
+
+                    // Fill modal details
+                    const nameElem = document.getElementById("success-user-name");
+                    const emailElem = document.getElementById("success-user-email");
+                    const subjectElem = document.getElementById("success-user-subject");
+                    const messageElem = document.getElementById("success-user-message");
+
+                    if (nameElem) nameElem.textContent = name;
+                    if (emailElem) emailElem.textContent = email;
+                    if (subjectElem) subjectElem.textContent = loc || "Portfolio Inquiry";
+                    if (messageElem) messageElem.textContent = message.length > 90 ? message.substring(0, 90) + "..." : message;
+
+                    // Display In-Page Success Modal & Confetti
+                    if (successModal) {
+                        const modalTitle = document.getElementById("success-modal-title");
+                        if (modalTitle) modalTitle.textContent = "Message Sent! 🎉";
+                        successModal.style.display = "flex";
+                    }
+                    triggerConfetti();
+                    showToast("Message sent successfully! 🚀", "fas fa-check-circle");
+
+                    // Reset form
+                    contactForm.reset();
+                    const charCountSpan = document.getElementById("char-count");
+                    if (charCountSpan) charCountSpan.textContent = "0";
+                })
+                .catch(error => {
+                    console.error("Submission error:", error);
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = origHtml;
+                    
+                    // Fallback to mailto if offline or blocked
+                    showToast("Sending via email client...", "fas fa-envelope");
+                    const subject = `Portfolio Message from ${name}`;
+                    const body = `Hi Pratiksha,\n\n${message}\n\n---\nSender Details:\nName: ${name}\nEmail: ${email}\nLocation: ${loc}`;
+                    window.location.href = `mailto:pratikshapatil4077@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                });
+            });
+        }
+
+        // Success Modal Close Listeners
+        if (closeSuccessModal && successModal) {
+            closeSuccessModal.addEventListener("click", () => {
+                successModal.style.display = "none";
+            });
+        }
+        if (successModalBtn && successModal) {
+            successModalBtn.addEventListener("click", () => {
+                successModal.style.display = "none";
+            });
+        }
+        window.addEventListener("click", (e) => {
+            if (e.target === successModal) {
+                successModal.style.display = "none";
+            }
+        });
+
+        // Skill Chip Click Tooltip & Card Glow Toggle
+        document.querySelectorAll(".skill-chip").forEach(chip => {
+            chip.setAttribute("tabindex", "0");
+            chip.addEventListener("click", (e) => {
+                e.stopPropagation();
+                const wasActive = chip.classList.contains("active-chip") || chip.classList.contains("active-tooltip");
+                document.querySelectorAll(".skill-chip").forEach(c => {
+                    c.classList.remove("active-chip");
+                    c.classList.remove("active-tooltip");
+                });
+                document.querySelectorAll(".skills-category-card").forEach(card => card.classList.remove("active-card"));
+                if (!wasActive) {
+                    chip.classList.add("active-chip");
+                    chip.classList.add("active-tooltip");
+                    const parentCard = chip.closest(".skills-category-card");
+                    if (parentCard) {
+                        parentCard.classList.add("active-card");
+                    }
+                }
+            });
+        });
+
+        document.addEventListener("click", () => {
+            document.querySelectorAll(".skill-chip").forEach(c => {
+                c.classList.remove("active-chip");
+                c.classList.remove("active-tooltip");
+            });
+            document.querySelectorAll(".skills-category-card").forEach(card => card.classList.remove("active-card"));
+        });
+
+        // Guaranteed Direct File Download for Resume
+        const resumeBtn = document.getElementById("resume-download-btn");
+        if (resumeBtn) {
+            resumeBtn.addEventListener("click", (e) => {
+                e.preventDefault();
+                showToast("Downloading Resume... 📄", "fas fa-file-download");
+
+                try {
+                    if (window.RESUME_BASE64) {
+                        const byteCharacters = atob(window.RESUME_BASE64);
+                        const byteNumbers = new Array(byteCharacters.length);
+                        for (let i = 0; i < byteCharacters.length; i++) {
+                            byteNumbers[i] = byteCharacters.charCodeAt(i);
+                        }
+                        const byteArray = new Uint8Array(byteNumbers);
+                        const blob = new Blob([byteArray], { type: "application/octet-stream" });
+                        const blobUrl = window.URL.createObjectURL(blob);
+                        const tempLink = document.createElement("a");
+                        tempLink.style.display = "none";
+                        tempLink.href = blobUrl;
+                        tempLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                        document.body.appendChild(tempLink);
+                        tempLink.click();
+                        setTimeout(() => {
+                            window.URL.revokeObjectURL(blobUrl);
+                            tempLink.remove();
+                        }, 500);
+                        showToast("Resume saved to your Downloads! 🚀", "fas fa-check-circle");
+                        return;
+                    }
+
+                    // Fallback to direct blob fetch
+                    fetch("resume.pdf")
+                        .then(res => res.blob())
+                        .then(blob => {
+                            const blobUrl = window.URL.createObjectURL(new Blob([blob], { type: "application/octet-stream" }));
+                            const tempLink = document.createElement("a");
+                            tempLink.style.display = "none";
+                            tempLink.href = blobUrl;
+                            tempLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                            document.body.appendChild(tempLink);
+                            tempLink.click();
+                            setTimeout(() => {
+                                window.URL.revokeObjectURL(blobUrl);
+                                tempLink.remove();
+                            }, 500);
+                            showToast("Resume saved to your Downloads! 🚀", "fas fa-check-circle");
+                        })
+                        .catch(() => {
+                            const fallbackLink = document.createElement("a");
+                            fallbackLink.href = "resume.pdf";
+                            fallbackLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                            document.body.appendChild(fallbackLink);
+                            fallbackLink.click();
+                            fallbackLink.remove();
+                        });
+                } catch (err) {
+                    console.error("Download error:", err);
+                    const fallbackLink = document.createElement("a");
+                    fallbackLink.href = "resume.pdf";
+                    fallbackLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                    document.body.appendChild(fallbackLink);
+                    fallbackLink.click();
+                    fallbackLink.remove();
+                }
+            });
+        }
+
+        // Confetti Particle System
+        function triggerConfetti() {
+            const canvas = document.createElement("canvas");
+            canvas.style.position = "fixed";
+            canvas.style.top = "0";
+            canvas.style.left = "0";
+            canvas.style.width = "100%";
+            canvas.style.height = "100%";
+            canvas.style.pointerEvents = "none";
+            canvas.style.zIndex = "9999";
+            document.body.appendChild(canvas);
+
+            const ctx = canvas.getContext("2d");
+            let width = (canvas.width = window.innerWidth);
+            let height = (canvas.height = window.innerHeight);
+
+            window.addEventListener("resize", () => {
+                width = (canvas.width = window.innerWidth);
+                height = (canvas.height = window.innerHeight);
+            });
+
+            const colors = ["#b5ff00", "#9fd000", "#ffffff", "#4ade80", "#00ffff", "#ffd700", "#ff6347"];
+            const particles = [];
+
+            class ConfettiParticle {
+                constructor() {
+                    this.x = Math.random() * width;
+                    this.y = Math.random() * -height - 20;
+                    this.vx = (Math.random() - 0.5) * 4;
+                    this.vy = Math.random() * 4 + 4;
+                    this.radius = Math.random() * 4 + 4;
+                    this.color = colors[Math.floor(Math.random() * colors.length)];
+                    this.rotation = Math.random() * 360;
+                    this.rotationSpeed = (Math.random() - 0.5) * 5;
+                    this.width = Math.random() * 8 + 4;
+                    this.height = Math.random() * 8 + 4;
+                }
+
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    this.rotation += this.rotationSpeed;
+                }
+
+                draw() {
+                    ctx.save();
+                    ctx.translate(this.x, this.y);
+                    ctx.rotate((this.rotation * Math.PI) / 180);
+                    ctx.fillStyle = this.color;
+                    ctx.fillRect(-this.width / 2, -this.height / 2, this.width, this.height);
+                    ctx.restore();
+                }
+            }
+
+            for (let i = 0; i < 150; i++) {
+                particles.push(new ConfettiParticle());
+            }
+
+            let animationId;
+            const startTime = Date.now();
+            const duration = 4000;
+
+            function animateConfetti() {
+                ctx.clearRect(0, 0, width, height);
+
+                particles.forEach((p) => {
+                    p.update();
+                    p.draw();
+                });
+
+                if (Date.now() - startTime < duration) {
+                    animationId = requestAnimationFrame(animateConfetti);
+                } else {
+                    canvas.style.transition = "opacity 1s ease";
+                    canvas.style.opacity = "0";
+                    setTimeout(() => {
+                        cancelAnimationFrame(animationId);
+                        canvas.remove();
+                    }, 1000);
+                }
+            }
+
+            animateConfetti();
+        }
+    </script>
+
+</body>
+
+</html>
