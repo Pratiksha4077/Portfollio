@@ -84,7 +84,7 @@
 
             <div class="hero-buttons">
 
-                <a href="resume.pdf" download="Pratiksha_Patil_Resume.pdf" class="btn" id="resume-download-btn">
+                <a href="Resume_PratikshaPatil.pdf" download="Pratiksha_Patil_Resume.pdf" class="btn" id="resume-download-btn">
                     <i class="fas fa-download" style="margin-right: 8px;"></i>
                     Download Resume
                 </a>
@@ -2212,7 +2212,7 @@
                     }
 
                     // Fallback to direct blob fetch
-                    fetch("resume.pdf")
+                    fetch("Resume_PratikshaPatil.pdf")
                         .then(res => res.blob())
                         .then(blob => {
                             const blobUrl = window.URL.createObjectURL(new Blob([blob], { type: "application/octet-stream" }));
@@ -2230,7 +2230,7 @@
                         })
                         .catch(() => {
                             const fallbackLink = document.createElement("a");
-                            fallbackLink.href = "resume.pdf";
+                            fallbackLink.href = "Resume_PratikshaPatil.pdf";
                             fallbackLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
                             document.body.appendChild(fallbackLink);
                             fallbackLink.click();
@@ -2239,7 +2239,7 @@
                 } catch (err) {
                     console.error("Download error:", err);
                     const fallbackLink = document.createElement("a");
-                    fallbackLink.href = "resume.pdf";
+                    fallbackLink.href = "Resume_PratikshaPatil.pdf";
                     fallbackLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
                     document.body.appendChild(fallbackLink);
                     fallbackLink.click();
