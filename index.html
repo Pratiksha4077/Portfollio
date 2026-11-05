@@ -84,7 +84,7 @@
 
             <div class="hero-buttons">
 
-                <a href="Resume_PratikshaPatil.pdf" download="Pratiksha_Patil_Resume.pdf" class="btn" id="resume-download-btn">
+                <a href="Resume_PratikshaPatil.pdf" download="Resume_PratikshaPatil.pdf" class="btn" id="resume-download-btn">
                     <i class="fas fa-download" style="margin-right: 8px;"></i>
                     Download Resume
                 </a>
@@ -2200,7 +2200,7 @@
                         const tempLink = document.createElement("a");
                         tempLink.style.display = "none";
                         tempLink.href = blobUrl;
-                        tempLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                        tempLink.setAttribute("download", "Resume_PratikshaPatil.pdf");
                         document.body.appendChild(tempLink);
                         tempLink.click();
                         setTimeout(() => {
@@ -2219,7 +2219,7 @@
                             const tempLink = document.createElement("a");
                             tempLink.style.display = "none";
                             tempLink.href = blobUrl;
-                            tempLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                            tempLink.setAttribute("download", "Resume_PratikshaPatil.pdf");
                             document.body.appendChild(tempLink);
                             tempLink.click();
                             setTimeout(() => {
@@ -2231,7 +2231,7 @@
                         .catch(() => {
                             const fallbackLink = document.createElement("a");
                             fallbackLink.href = "Resume_PratikshaPatil.pdf";
-                            fallbackLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                            fallbackLink.setAttribute("download", "Resume_PratikshaPatil.pdf");
                             document.body.appendChild(fallbackLink);
                             fallbackLink.click();
                             fallbackLink.remove();
@@ -2240,7 +2240,7 @@
                     console.error("Download error:", err);
                     const fallbackLink = document.createElement("a");
                     fallbackLink.href = "Resume_PratikshaPatil.pdf";
-                    fallbackLink.setAttribute("download", "Pratiksha_Patil_Resume.pdf");
+                    fallbackLink.setAttribute("download", "Resume_PratikshaPatil.pdf");
                     document.body.appendChild(fallbackLink);
                     fallbackLink.click();
                     fallbackLink.remove();
